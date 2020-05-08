@@ -25,11 +25,11 @@ import javafx.geometry.Pos;
 import javafx.event.EventHandler;
 import javafx.event.ActionEvent;
 
-
 public class GUI extends Application 
 {
  
-   private Number ArraySize = 0;
+   private String sortingAlgo;
+   private Number arraySize = 0;
    
 	
    public static void main(String[] args)
@@ -47,6 +47,8 @@ public class GUI extends Application
 	  
 	  Sort.setOnAction(new EventHandler<ActionEvent>() {
 		    @Override public void handle(ActionEvent e) {
+		    	
+		
 		    }
 		});
 		   
@@ -61,9 +63,7 @@ public class GUI extends Application
 	  // Register an event handler for the ComboBox.
       comboBox.setOnAction(event ->
       {
-    	 String a;
-         a = comboBox.getValue();
-         System.out.println(a);
+         sortingAlgo = comboBox.getValue();
       });
 	  
 	  
@@ -75,7 +75,7 @@ public class GUI extends Application
 	            new ChangeListener<Number>() { 
 	            public void changed(ObservableValue <? extends Number > observable, Number oldValue, Number newValue) 
 	            { 
-	            	ArraySize = newValue;
+	            	arraySize = newValue;
 	            } 
 	        }); 
 
