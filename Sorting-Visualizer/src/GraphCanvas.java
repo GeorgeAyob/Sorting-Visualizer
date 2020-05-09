@@ -14,6 +14,7 @@ public class GraphCanvas extends Shape {
 	private int size;
 	private int[] arr;
 
+	Random r = new Random(); 
 	
 	public GraphCanvas(int s) {
 		this.size = s;
@@ -21,13 +22,25 @@ public class GraphCanvas extends Shape {
 	}
 	
 	public void createList() {
-		
-		Random rand = new Random(); 
-		
-		for(int i = 0; i<= size; i++ ) 
-			arr[i] = (int)rand.nextInt(1000); 	
+		initializeList();
+		shuffleList();
+	}
+	
+	public void initializeList() {
+		for (int i = 0; i < size; i++) 
+			arr[i] = i; 	
 	}
 
+	public void shuffleList() {
+		for(int a = 0; a < 500; a++) {
+			for(int i = 0; i < size; i++) {
+				int rand = r.nextInt(size);
+				int temp = arr[i];
+				arr[i] = arr[rand];
+				arr[rand] = temp;
+			}
+		}
+	}
 	
 	
 
