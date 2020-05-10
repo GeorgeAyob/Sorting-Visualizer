@@ -8,7 +8,6 @@ import java.util.Arrays;
 import java.util.Random;
 
 import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -94,8 +93,8 @@ public class GUI {
 	JLabel typeL = new JLabel("Graph Types");
 	
 	//DROP DOWN BOX
-	JComboBox alg = new JComboBox(algorithms);
-	JComboBox graph = new JComboBox(types);
+	JComboBox<String> alg = new JComboBox<String>(algorithms);
+	JComboBox<String> graph = new JComboBox<String>(types);
 	JTextArea information = new JTextArea(algInfo[curAlg]);
 	
 	//BUTTONS
@@ -504,7 +503,6 @@ public class GUI {
 		}
 		
 		public void oddEvenSort() {
-			int c = 0;
 			boolean noswaps = false;
 			while(!noswaps && sorting) {
 				noswaps = true;
@@ -522,7 +520,6 @@ public class GUI {
 					delay();
 				}
 				off = 1 - off;
-				c++;
 			}
 		}
 		
