@@ -442,6 +442,10 @@ public class GUI {
 	//SUB CLASS FOR ALGORITHMS
 	class SortingAlgorithms {
 		
+		
+		/**
+		 * Performs a selection sort on the list. https://en.wikipedia.org/wiki/Selection_sort
+		 */
 		public void selectionSort() {
 			int c = 0;
 			while(c < len && sorting) {
@@ -464,6 +468,13 @@ public class GUI {
 			}
 		}
 		
+		
+		/**
+		 * Performs an insertion sort on the list starting with pointers to the extremes. https://en.wikipedia.org/wiki/Insertion_sort
+		 * 
+		 * @param start
+		 * @param end
+		 */
 		public void insertionSort(int start, int end) {
 			for(int i = start+1; i <= end; i++) {
 				current = i;
@@ -480,6 +491,10 @@ public class GUI {
 			}
 		}
 		
+		
+		/**
+		 * Performs a bubble sort on the list. https://en.wikipedia.org/wiki/Bubble_sort
+		 */
 		public void bubbleSort() {
 			int c = 1;
 			boolean noswaps = false;
@@ -502,6 +517,10 @@ public class GUI {
 			}
 		}
 		
+		
+		/**
+		 * Performs an odd even sort on the list. https://en.wikipedia.org/wiki/Odd%E2%80%93even_sort
+		 */
 		public void oddEvenSort() {
 			boolean noswaps = false;
 			while(!noswaps && sorting) {
@@ -523,6 +542,10 @@ public class GUI {
 			}
 		}
 		
+		
+		/**
+		 * Performs a cocktail sort on the list. https://en.wikipedia.org/wiki/Cocktail_shaker_sort
+		 */
 		public void cocktailSort() {
 			boolean noswaps = false;
 			int c = 0;
@@ -558,6 +581,10 @@ public class GUI {
 			}
 		}
 		
+		
+		/**
+		 * Performs a heap sort on the list. https://en.wikipedia.org/wiki/Heapsort
+		 */
 		public void heapSort() {
 			heapify(len);
 			int end = len-1;
@@ -571,6 +598,7 @@ public class GUI {
 			}
 		}
 		
+		
 		public void heapify(int n) {
 			int start = iParent(n-1);
 			while(start >= 0 && sorting) {
@@ -580,6 +608,7 @@ public class GUI {
 				delay();
 			}
 		}
+		
 		
 		public void siftDown(int start, int end) {
 			int root = start;
@@ -604,9 +633,17 @@ public class GUI {
 			}
 		}
 		
+		
 		public int iParent(int i) { return ((i-1)/2); }
 		public int iLeftChild(int i) { return 2*i + 1; }
 		
+		
+		/**
+		 * Performs a quick sort on the list recursively. https://en.wikipedia.org/wiki/Quicksort
+		 * 
+		 * @param lo
+		 * @param hi
+		 */
 		public void quickSort(int lo, int hi) {
 			if(!sorting)
 				return;
@@ -618,6 +655,14 @@ public class GUI {
 			}
 		}
 		
+		
+		/**
+		 * Updates the new partition for the quick sort given the first and second pointers
+		 * 
+		 * @param lo
+		 * @param hi
+		 * @return
+		 */
 		public int partition(int lo, int hi) {
 			int pivot = list[hi];	acc++;
 			int i = lo - 1;
@@ -639,6 +684,14 @@ public class GUI {
 			return i+1;
 		}
 		
+		
+		/**
+		 * Performs the merge operation of merge sort
+		 * 
+		 * @param l
+		 * @param m
+		 * @param r
+		 */
 		void merge(int l, int m, int r)
 	    {
 	        int n1 = m - l + 1;
@@ -688,6 +741,13 @@ public class GUI {
 	        }
 	    }
 
+		
+		/**
+		 * Performs a merge sort recursively. https://en.wikipedia.org/wiki/Merge_sort
+		 * 
+		 * @param l
+		 * @param r
+		 */
 	    public void mergeSort(int l, int r) {
 	        if (l < r) {
 	            int m = (l+r)/2;
@@ -699,6 +759,10 @@ public class GUI {
 	        }
 	    }
 	    
+	    
+	    /**
+	     * Performs a pigeholeSort on the list. https://en.wikipedia.org/wiki/Pigeonhole_sort
+	     */
 	    public void pigeonholeSort() {
 	    	int mi = 0;
 	    	int size = len-mi+1;
@@ -719,6 +783,11 @@ public class GUI {
 	    	}
 	    }
 	    
+	    /**
+	     * Performs a radix sort on the list. https://en.wikipedia.org/wiki/Radix_sort
+	     * 
+	     * @param n
+	     */
 	    public void radixSort(int n) {
 	    	int m = getMax(n);
 	    	 for(int exp = 1; m/exp > 0; exp *= 10) {
@@ -730,6 +799,12 @@ public class GUI {
 	    	 }
 	    }
 	    
+	    /**
+	     * Helper function for the radix sort algorithm
+	     * 
+	     * @param n
+	     * @param exp
+	     */
 	    public void countSort(int n, int exp) {
 	    	int output[] = new int[n];
 	    	int i;
@@ -758,6 +833,12 @@ public class GUI {
 	    	}
 	    }
 	    
+	    /**
+	     * Gets the maximum value from the list of size n.
+	     * 
+	     * @param n
+	     * @return
+	     */
 	    public int getMax(int n) {
 	    	int mx = list[0];
 	    	for(int i = 1; i < n; i++) {
@@ -768,6 +849,12 @@ public class GUI {
 	    	return mx;
 	    }
 	    
+	    
+	    /**
+	     * Performs a timsort on the list. https://en.wikipedia.org/wiki/Timsort
+	     * 
+	     * @param n
+	     */
 	    public void timSort(int n) {
 	    	int RUN = 64;
 	    	if(len >64) {
@@ -790,6 +877,10 @@ public class GUI {
 	    	}
 	    }
 		
+	    
+	    /**
+	     * Performs a bogo sort on the list. https://en.wikipedia.org/wiki/Bogosort
+	     */
 		public void bogoSort() {
 			while(!checkSorted() && sorting) {
 				for(int i = 0; i < len; i++) {
@@ -807,12 +898,25 @@ public class GUI {
 			}
 		}
 		
+		
+		/**
+		 * Swaps two values in the list.
+		 * 
+		 * @param i1
+		 * @param i2
+		 */
 		public void swap(int i1, int i2) {
 			int temp = list[i1];	acc++;
 			list[i1] = list[i2];	acc+=2;
 			list[i2] = temp;	acc++;
 		}
 		
+		
+		/**
+		 * Checks if the list is sorted
+		 * 
+		 * @return boolean
+		 */
 		public boolean checkSorted() {
 			for(int i = 0; i < len-1; i++) {
 				if(list[i] > list[i+1]) {	acc+=2;
@@ -821,5 +925,6 @@ public class GUI {
 			}
 			return true;
 		}
+		
 	}
 }
