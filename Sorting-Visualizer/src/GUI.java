@@ -139,103 +139,114 @@ public class GUI {
 	public void initialize() {
 		
 		//SET UP FRAME
-		jf = new JFrame();
-		jf.setSize(800,635);
-		jf.setTitle("Visual Sort");
-		jf.setVisible(true);
-		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		jf.setResizable(false);
-		jf.setLocationRelativeTo(null);
-		jf.getContentPane().setLayout(null);
-		
-		//SET UP TOOLBAR
-		tools.setLayout(null);
-		tools.setBounds(5,10,180,590);
-		tools.setBorder(BorderFactory.createTitledBorder(loweredetched,"Controls"));
-		
-		//SET UP ALGORITHM LABEL
-		algorithmL.setHorizontalAlignment(JLabel.CENTER);
-		algorithmL.setBounds(40,20,100,25);
-		tools.add(algorithmL);
-		
-		//SET UP DROP DOWN
-		alg.setBounds(30,45,120,25);
-		tools.add(alg);
+				jf = new JFrame();
+				jf.setSize(800,635);
+				jf.setTitle("Soritng Visualizer");
+				jf.setVisible(true);
+				jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				jf.setResizable(false);
+				jf.setLocationRelativeTo(null);
+				jf.getContentPane().setLayout(null);
+				
 
-		//SET UP GRAPH TYPE LABEL
-		typeL.setHorizontalAlignment(JLabel.CENTER);
-		typeL.setBounds(40,80,100,25);
-		tools.add(typeL);
-		
-		//SET UP GRAPH TYPE DROP DOWN
-		graph.setBounds(30,105,120,25);
-		tools.add(graph);
-		
-		//SET UP SORT BUTTON
-		sort.setBounds(40,150,100,25);
-		tools.add(sort);
-		
-		//SET UP SHUFFLE BUTTON
-		shuffle.setBounds(40,190,100,25);
-		tools.add(shuffle);
-		
-		//SET UP DELAY LABEL
-		delayL.setHorizontalAlignment(JLabel.LEFT);
-		delayL.setBounds(10,230,50,25);
-		tools.add(delayL);
-		
-		//SET UP MS LABEL
-		msL.setHorizontalAlignment(JLabel.LEFT);
-		msL.setBounds(135,230,50,25);
-		tools.add(msL);
-		
-		//SET UP SPEED SLIDER
-		speed.setMajorTickSpacing(5);
-		speed.setBounds(55,230,75,25);
-		speed.setPaintTicks(false);
-		tools.add(speed);
-		
-		//SET UP SIZE LABEL
-		sizeL.setHorizontalAlignment(JLabel.LEFT);
-		sizeL.setBounds(10,275,50,25);
-		tools.add(sizeL);
-		
-		//SET UP LEN LABEL
-		lenL.setHorizontalAlignment(JLabel.LEFT);
-		lenL.setBounds(140,275,50,25);
-		tools.add(lenL);
-		
-		//SET UP SIZE SLIDER
-		size.setMajorTickSpacing(50);
-		size.setBounds(55,275,75,25);
-		size.setPaintTicks(false);
-		tools.add(size);
-		
-		//SET UP COMPARISONS LABEL
-		compareL.setHorizontalAlignment(JLabel.LEFT);
-		compareL.setBounds(10,320,200,25);
-		tools.add(compareL);
-		
-		//SET UP ARRAY ACCESS LABEL
-		accessL.setHorizontalAlignment(JLabel.LEFT);
-		accessL.setBounds(10,360,200,25);
-		tools.add(accessL);
-		
-		//SET UP INFO AREA
-		information.setBounds(10,400,160,125);
-		information.setEditable(false);
-		tools.add(information);
+				//SET UP TOOLBAR
+				tools.setLayout(null);
+				tools.setBounds(5,10,180,590);
+				tools.setBorder(BorderFactory.createTitledBorder(loweredetched,"Controls"));
+				
 
-		//SET UP CREDIT BUTTON
-		credit.setBounds(40,540,100,25);
-		tools.add(credit);
-		
-		//SET UP CANVAS FOR GRAPH
-		canvas = new GraphCanvas();
-		canvas.setBounds(190,0,SIZE,SIZE);
-		canvas.setBorder(BorderFactory.createLineBorder(Color.black));
-		jf.getContentPane().add(tools);
-		jf.getContentPane().add(canvas);
+				//SET UP ALGORITHM LABEL
+				algorithmL.setHorizontalAlignment(JLabel.CENTER);
+				algorithmL.setBounds(40,20,100,25);
+				tools.add(algorithmL);
+				
+
+				//SET UP DROP DOWN
+				alg.setBounds(30,45,120,25);
+				tools.add(alg);
+
+				//SET UP GRAPH TYPE LABEL
+				typeL.setHorizontalAlignment(JLabel.CENTER);
+				typeL.setBounds(40,80,100,25);
+				tools.add(typeL);
+				
+
+				//SET UP GRAPH TYPE DROP DOWN
+				graph.setBounds(30,105,120,25);
+				tools.add(graph);
+				
+
+				//SET UP SORT BUTTON
+				sort.setBounds(40,150,100,25);
+				tools.add(sort);
+				
+
+				//SET UP SHUFFLE BUTTON
+				shuffle.setBounds(40,190,100,25);
+				tools.add(shuffle);
+				
+
+				//SET UP DELAY LABEL
+				delayL.setHorizontalAlignment(JLabel.LEFT);
+				delayL.setBounds(10,230,50,25);
+				tools.add(delayL);
+				
+
+				//SET UP MS LABEL
+				msL.setHorizontalAlignment(JLabel.LEFT);
+				msL.setBounds(135,230,50,25);
+				tools.add(msL);
+				
+
+				//SET UP SPEED SLIDER
+				speed.setMajorTickSpacing(5);
+				speed.setBounds(55,230,75,25);
+				speed.setPaintTicks(false);
+				tools.add(speed);
+				
+
+				//SET UP SIZE LABEL
+				sizeL.setHorizontalAlignment(JLabel.LEFT);
+				sizeL.setBounds(10,275,50,25);
+				tools.add(sizeL);
+				
+
+				//SET UP LEN LABEL
+				lenL.setHorizontalAlignment(JLabel.LEFT);
+				lenL.setBounds(140,275,50,25);
+				tools.add(lenL);
+				
+
+				//SET UP SIZE SLIDER
+				size.setMajorTickSpacing(50);
+				size.setBounds(55,275,75,25);
+				size.setPaintTicks(false);
+				tools.add(size);
+				
+
+				//SET UP COMPARISONS LABEL
+				compareL.setHorizontalAlignment(JLabel.LEFT);
+				compareL.setBounds(10,320,200,25);
+				tools.add(compareL);
+				
+
+				//SET UP ARRAY ACCESS LABEL
+				accessL.setHorizontalAlignment(JLabel.LEFT);
+				accessL.setBounds(10,360,200,25);
+				tools.add(accessL);
+				
+
+				//SET UP CREDIT BUTTON
+				credit.setBounds(40,540,100,25);
+				tools.add(credit);
+				
+
+				//SET UP CANVAS FOR GRAPH
+				canvas = new GraphCanvas();
+				canvas.setBounds(190,0,SIZE,SIZE);
+				canvas.setBorder(BorderFactory.createLineBorder(Color.black));
+				jf.getContentPane().add(tools);
+				jf.getContentPane().add(canvas);
 
 		//ADD ACTION LISTENERS
 		alg.addItemListener(new ItemListener() {
@@ -402,22 +413,24 @@ public class GUI {
 	//SUB CLASS TO CONTROL THE GRAPH
 	class GraphCanvas extends JPanel {
 		
+
 		public GraphCanvas() {
-			setBackground(Color.black);
+			setBackground(Color.white);
 		}
 		
+
 		//PAINTS THE GRAPH
 		public void paintComponent(Graphics g) {
 			super.paintComponent(g);
 			for(int i = 0; i < len; i++) {	//RUNS TROUGH EACH ELEMENT OF THE LIST
 				int HEIGHT = list[i]*width;	//SETS THE HEIGHT OF THE ELEMENT ON THE GRAPH
 				if(type == 0) {		//BAR GRAPH TYPE
-					g.setColor(Color.white);	//DEFAULT COLOR
+					g.setColor(Color.LIGHT_GRAY);	//DEFAULT COLOR
 					if(current > -1 && i == current) {
-						g.setColor(Color.green);	//COLOR OF CURRENT
+						g.setColor(Color.blue);	//COLOR OF CURRENT
 					}
 					if(check > -1 && i == check) {
-						g.setColor(Color.red);	//COLOR OF CHECKING
+						g.setColor(Color.green);	//COLOR OF CHECKING
 					}
 					//DRAWS THE BAR AND THE BLACK OUTLINE
 					g.fillRect(i*width, SIZE-HEIGHT, width, HEIGHT);
@@ -430,7 +443,7 @@ public class GUI {
 						g.setColor(Color.green);	//COLOR OF CURRENT
 					}
 					if(check > -1 && i == check) {
-						g.setColor(Color.red);	//COLOR OF CHECKING
+						g.setColor(Color.yellow);	//COLOR OF CHECKING
 					}
 					//DRAWS THE DOT
 					g.fillOval(i*width,SIZE-HEIGHT,width,width);
