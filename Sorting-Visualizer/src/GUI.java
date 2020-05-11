@@ -26,6 +26,7 @@ public class GUI {
 	//FRAME
 	private JFrame jf;
 	
+	  
 	
 	//GENERAL VARIABLES
 	private int sz = 50;
