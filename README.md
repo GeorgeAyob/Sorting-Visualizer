@@ -18,7 +18,7 @@ Different sorts to implement:
 1. Introduction
 The application consists of an interface which allows the user to explore different sorting
 algorithms, not only getting a visual output of the sorting process, but also receiving useful
-statistic on the algorithm itself (time complexity, actual time utilized, etc.…)
+statistic on the algorithm itself (time complexity, actual time utilized, etc.
 
 2. Application Architecture
 The application is going to be built in Java, using the JavaFX library to implement the GUI. The
@@ -35,13 +35,11 @@ The core of the application is the class containing all the algorithms, which is
 implement a big variety of sorting algorithm: selection sort, bubble sort, cocktail sort, odd-even
 sort, insertion sort, tim sort, quick sort, heap sort, merge sort, pigeonhole sort, radix sort, and
 bogo sort.
-
 The GUI class is also going to contain a series of classes to help the user navigate through the
 different functionalities. Some of them (and other may be introduced in production): createList,
 which is going to initialize a list of numbers; shuffleList, which shuffles the number in a random
 manner; reset, which allows the user to reset any control previously selected; sorting, to start the
 sorting process; pause, to pause the sorting process
-
 
 4. User Interface
 The user interface consists of two main panels. The left panel is a control board, from which the
