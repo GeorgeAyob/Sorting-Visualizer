@@ -1,9 +1,9 @@
 Sorting Visualizer
 Java / JavaFX application for visualizing and sorting algorithms using various sorts of data structures.
 
-Before Sort:
-
-<img width="795" alt="Screen Shot 2020-06-29 at 11 56 39 AM" src="https://user-images.githubusercontent.com/51719874/86028359-ccae5e80-b9ff-11ea-8545-268ccf3ded66.png">
+ #[
+![sorter](https://user-images.githubusercontent.com/51719874/86028837-67a73880-ba00-11ea-8c28-e0b35af58c1e.gif)
+](url)
 
 During Sort:
 
