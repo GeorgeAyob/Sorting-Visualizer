@@ -3,12 +3,15 @@ Java / JavaFX application for visualizing and sorting algorithms using various s
 
 Before Sort:
 
-<img width="798" alt="Screen Shot 2020-06-29 at 11 42 57 AM" src="https://user-images.githubusercontent.com/51719874/86026841-f23a6880-b9fd-11ea-8f11-6661310b234e.png">
+<img width="795" alt="Screen Shot 2020-06-29 at 11 56 39 AM" src="https://user-images.githubusercontent.com/51719874/86028359-ccae5e80-b9ff-11ea-8545-268ccf3ded66.png">
 
+During Sort:
 
-After:
+<img width="798" alt="Screen Shot 2020-06-29 at 11 57 10 AM" src="https://user-images.githubusercontent.com/51719874/86028362-ccae5e80-b9ff-11ea-84f3-6418b552157d.png">
 
-<img width="794" alt="Screen Shot 2020-06-29 at 11 44 01 AM" src="https://user-images.githubusercontent.com/51719874/86027260-7d1b6300-b9fe-11ea-9476-1d833b0f83f6.png">
+After Sort:
+
+<img width="786" alt="Screen Shot 2020-06-29 at 11 57 42 AM" src="https://user-images.githubusercontent.com/51719874/86028364-ccae5e80-b9ff-11ea-89d2-2cb99b196a02.png">
 
 
 Different sorts to implement:
