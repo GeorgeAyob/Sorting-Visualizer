@@ -8,7 +8,8 @@ Before Sort:
 
 After:
 
-<img width="798" alt="Screen Shot 2020-06-29 at 11 42 57 AM" src="https://user-images.githubusercontent.com/51719874/86027028-2c0b6f00-b9fe-11ea-9882-7487626ecd06.png">
+<img width="794" alt="Screen Shot 2020-06-29 at 11 44 01 AM" src="https://user-images.githubusercontent.com/51719874/86027260-7d1b6300-b9fe-11ea-9476-1d833b0f83f6.png">
+
 
 Different sorts to implement:
 
