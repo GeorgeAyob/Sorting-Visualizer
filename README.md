@@ -48,10 +48,11 @@ needs to be sorted. For every iteration, these lines are going to switch positio
 sored position is achieved.
 
 
-<img width="789" alt="Screen Shot 2020-09-07 at 12 38 02 PM" src="https://user-images.githubusercontent.com/51719874/92406873-24a3c880-f107-11ea-963a-23be5a5fa527.png">
 
 <img width="796" alt="Screen Shot 2020-09-07 at 12 38 22 PM" src="https://user-images.githubusercontent.com/51719874/92406876-253c5f00-f107-11ea-8bbb-25f4deb0a6e6.png">
 
 <img width="787" alt="Screen Shot 2020-09-07 at 12 38 43 PM" src="https://user-images.githubusercontent.com/51719874/92406874-253c5f00-f107-11ea-9803-64b541e64f8d.png">
+
+<img width="789" alt="Screen Shot 2020-09-07 at 12 38 02 PM" src="https://user-images.githubusercontent.com/51719874/92406873-24a3c880-f107-11ea-963a-23be5a5fa527.png">
 
 
